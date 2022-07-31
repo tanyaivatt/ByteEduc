@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    transition: all .2s ease-out;
+    text-decoration: none;
+} */
+
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header{
+    background-color: rgba(255, 113, 67, 0.27);
+    padding: 48px 0 58px;
+}
+
+.container{
+    max-width: 1070px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .container ul{
+    list-style-type: none;
+}
+
+.nav__li{
+    display: inline-block;
+}
+
+.nav__li:not(:first-of-type){
+    margin-left: 49px;
+}
+
+.nav__li a{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.468947px;
+    color: #696871;
+    text-decoration: none;
+}
+
+.nav__li:hover a{
+    color: #000;
+    transition: .3s;
+}
+
+.button{
+    width: 212px;
+    height: 60px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.button__orange{
+    background: #FF7143;
+}
+
+.button__orange:hover{
+    box-shadow: .2rem .2rem .2rem rgba(192, 149, 133, 0.2);
+    transition: 500ms;
+}
+
+.about_container{
+    margin: 105px auto 85px;
+}
+
+.about{
+    max-width: 467px;
+}
+
+.about__title{
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 77px;
+    letter-spacing: -2.50105px;
+    color: #19191B;
+    margin-bottom: 30px;
+}
+
+.about__text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.625263px;
+    color: #696871;
+    margin-bottom: 50px;
+}
+
+.button__violet{
+    background: #5454D4;
+}
+
+.button__transparent{
+    background: none;
+    color: #5454D4;
+    border: 1px solid #5454D4;
+    margin-left: 35px;
+}
+
+.footer{
+    background-color: rgba(255, 113, 67, 0.27);
+    padding: 65px 0 60px;
+}
