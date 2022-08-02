@@ -14,7 +14,7 @@ body{
     font-family: 'DM Sans', sans-serif;
 }
 
-.header{
+.header, .footer{
     background-color: rgba(255, 113, 67, 0.27);
     padding: 48px 0 58px;
 }
@@ -22,10 +22,12 @@ body{
 .container{
     max-width: 1070px;
     margin: 0 auto;
+}
+
+.header__container, .footer__container, .about_container, .subscription, .plan__flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header .container ul{
@@ -34,6 +36,10 @@ body{
 
 .nav__li{
     display: inline-block;
+}
+
+.nav__li:hover{
+    color:#000;
 }
 
 .nav__li:not(:first-of-type){
@@ -112,6 +118,118 @@ body{
     color: #5454D4;
     border: 1px solid #5454D4;
     margin-left: 35px;
+}
+
+.subscription{
+    margin: 85px auto 85px;
+}
+
+.subscription__title{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56316px;
+    color: #19191B;
+    margin-bottom: 38px;
+}
+
+.input__email{
+    height: 60px;
+    width: 302px;
+    border: 1px solid #7087FF;
+    margin-right: 39px;
+    padding-left: 14px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.input__email::placeholder, input{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.531474px;
+    color: #000000;
+}
+
+.input__email:focus{
+    outline: none;
+}
+
+.plan{
+    margin-bottom: 132px;
+}
+
+.plan_block{
+    width: 330px;
+    border-radius: 10px;
+    background: #F8F8F8;
+    text-align: center;
+    padding: 34px 0 27px;
+
+}
+
+.plan_block:hover{
+    transition: .5s;
+    background: #FF7143;
+    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+}
+
+.plan__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+    max-width: 504px;
+    margin-bottom: 110px;
+}
+
+.block__text{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.562737px;
+    color: #696871;
+}
+
+.plan_block:hover .block__text, .plan_block:hover .block__title, .plan_block:hover .block__li{
+    transition: .5s;
+    color: #FFF;
+}
+
+.block__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+    margin: 22px 0 28px;
+}
+
+.block__title span{
+    font-size: 28px;
+}
+
+.block__li{
+    list-style: none;
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.531474px;
+    color: #696871;
+}
+
+.button__block{
+    width: 285px;
+    background: #FFFFFF;
+    color: #5454D4;
+    margin-top: 36px;
+}
+
+.plan_block:hover .button__block{
+    background: #9F3919;
+    color: #fff;
+    transition: 1s;
 }
 
 .footer{
